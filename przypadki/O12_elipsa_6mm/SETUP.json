@@ -1,0 +1,10 @@
+{"U":8.333,"pitch_rot_deg":7.42,"yaw_deg":0.0,"h_m":0.07519,"z_surface_m":0.05879000000000001,"block Block":"[-4.0, -2.0, -2.0] .. [3.0, 2.0, 0.4]","block Block 3":"[-0.2, -0.045, -0.03] .. [0.25, 0.045, 0.15879000000000001]","block Block 3 2":"[-0.35, -0.45, -0.07] .. [0.35, 0.45, 0.043]","block Block 3 2 2":"[-0.32, -0.12, -0.12] .. [0.35, 0.12, 0.20879]","rot_pitch":["OK"],"rot_yaw":["OK"],"coarsen Volumetric Control":"1.5625 -> 3.125 % base","mesh_scale":2.5,"base_size_m":0.25,"strut_target_surface_m":0.003125,"strut_min_surface_m":3.0E-4,"plate_stl":"T:/KORAB_PLAT_T_SKRET7_20261118/10_GEOMETRIA/opt/O12_elipsa_6mm.stl","plate":"x 0.0300..0.2100, y +-0.050, z 0.0528 (0.006 m pod lustrem), grubosc 0.0020 m","plate_surface":"TF7 plytka antywentylacyjna.plytka_elipsa","plate_boundary":"TF7 plytka <- [Subtract.TF7 plytka antywentylacyjna.plytka_elipsa]","plate_prisms":"DISABLE","stage":"mesh","error":"Input faces are not consistently oriented
+Command: GenerateVolumeMesh
+   command: CommandComplete
+   error: Server Error
+","warnings":[],"trace":"Input faces are not consistently oriented
+Command: GenerateVolumeMesh
+   command: CommandComplete
+   error: Server Error
+
+"}

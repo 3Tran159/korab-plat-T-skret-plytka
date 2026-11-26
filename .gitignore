@@ -1,0 +1,10 @@
+*.sim
+*.simh
+*.sim~
+*.stl
+*.STL
+profile/
+render_*/
+__pycache__/
+*.log.tmp
+
