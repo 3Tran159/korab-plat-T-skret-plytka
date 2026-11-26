@@ -65,6 +65,18 @@ Wymagania: STAR-CCM+ 2606 (licencja PoD – wymaga sieci; zerwanie licencji koń
 VOF FlatVofWave, SST k-ω IDDES, All y+ (y+ ≈ 97), dt 0,4 ms, 5 it. wewn.; skręt = obrót całej siatki (RotatingMotion, oś z przez x = 0,16 m),
 0° do 0,4 s, 15°/s do 45° (3,4 s). Lustro wody z = 0,05879 m. Strut: krawędź natarcia x = 0,1955, spływu x ≈ 0,054.
 
+## Archiwum danych (pliki .sim)
+
+| Gdzie | Co | Rozmiar |
+|---|---|---|
+| `H:\10_ARCHIWUM_PROJEKTOW\KORAB\KORAB_plat_T_skret_plytka_dane\<przypadek>\` | `TF7_FINAL.sim` (stan końcowy, pełne pole – otwierać w GUI) i `<name>_SETUP.sim` (siatka + ustawienia, t = 0); gdy brak FINAL – ostatni `TF7_CKPT` (Y05, Y08) | ~50 GB |
+| `H:\...\KORAB_plat_T_skret_plytka_dane\_wyniki_klatki\` | klatki png animacji (filmy mp4 są w repo) | ~0,6 GB |
+| `E:\20_DANE_OBLICZEN_PRZELEW\KORAB_plat_T_historie_DO_ODSTRZALU_gdy_brak_miejsca\` | historie pól `.simh` Y04/Y05/Y07 (źródło filmów H01–H14) – do skasowania, gdy zabraknie miejsca | 64 GB |
+| `T:\..._do_usuniecia\`, `E:\..._do_usuniecia\` | pośrednie punkty zapisu, kopie robocze – do skasowania po decyzji | 79 GB |
+
+Pełna lista plików: `ARCHIWUM_DANYCH_inwentarz.csv` (kolumna `bylo` = ścieżka przed przeniesieniem).
+Y08 (powrót bez płytki) jest wznawialny z `H:\...\Y08_rampa_powrotna_45do0_30kmh_h1c_IDDES\TF7_CKPT_A.sim` – przed wznowieniem poprawić `LATEST_CHECKPOINT.json`.
+
 ## Znane ograniczenia
 - y+ ≈ 100 (funkcja ścianowa) i rampa 15°/s – kąty wentylacji to raczej górne granice (opóźnienie ~1–2°).
 - Raport `TF7_L_kg` ma abs() na części ciśnieniowej – powyżej ~39° liczyć Lp + Ls ze znakiem.
