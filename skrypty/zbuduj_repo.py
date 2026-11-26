@@ -59,6 +59,8 @@ for root in ROOTS:
 for f in (T / "40_WYNIKI").rglob("*"):
     if not f.is_file() or f.stat().st_size >= MAX_LIGHT:
         continue
+    if any(p.startswith("render_") or p == "profile" for p in f.parts):
+        continue
     if f.suffix.lower() == ".png" and (len(list(f.parent.glob("*.png"))) > 10 or any(p.startswith("render_") for p in f.parts)):
         continue
     if f.suffix.lower() in LIGHT_EXT | {".mp4"}:
